@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema Dinâmico e Carrinho de Compras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Minha Loja Online</h1> 
+        <div class="theme-switcher">
+            <button id="lightThemeBtn">
+                <span class="icon">
+                    <!-- Sol SVG -->
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="5" stroke="#fbbf24" stroke-width="2"/>
+                        <g stroke="#fbbf24" stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="4"/>
+                            <line x1="12" y1="20" x2="12" y2="23"/>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                            <line x1="1" y1="12" x2="4" y2="12"/>
+                            <line x1="20" y1="12" x2="23" y2="12"/>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                        </g>
+                    </svg>
+                </span>
+                Tema Claro
+            </button>
+            <button id="darkThemeBtn">
+                <span class="icon">
+                    <!-- Lua SVG -->
+                    <svg viewBox="0 0 24 24" fill="none">
+                        <path d="M21 12.79A9 9 0 0111.21 3c-.1 0-.2 0-.3.01a7.5 7.5 0 1010.08 9.78c.01-.1.01-.2.01-.3z" stroke="#6366f1" stroke-width="2" />
+                    </svg>
+                </span>
+                Tema Escuro
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="products">
+            <h2>Produtos Disponíveis</h2>
+            <div class="product-item">
+                <h3>Camiseta</h3>
+                <p>Preço: R$ 100,00</p>
+                <button data-product-id="1" data-product-name="Camiseta de grife" data-product-price="100.00">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-item">
+                <h3>Bone</h3>
+                <p>Preço: R$ 89,90</p>
+                <button data-product-id="2" data-product-name="Bone" data-product-price="89.90">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-item">
+                <h3>Oculos</h3>
+                <p>Preço: R$ 79,90</p>
+                <button data-product-id="3" data-product-name="Oculos" data-product-price="79.90">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>Carrinho de Compras</h2>
+            <ul id="cartItems">
+                <!-- Itens do carrinho serão adicionados aqui via JS -->
+            </ul>
+            <p>Total: R$ <span id="cartTotal">0.00</span></p>
+            <button id="clearCartBtn">Limpar Carrinho</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

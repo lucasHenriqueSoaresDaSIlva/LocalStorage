@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f6f7fb 0%, #e2e6f9 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.contact-section {
+    background: #fff;
+    padding: 32px 28px;
+    border-radius: 14px;
+    box-shadow: 0 4px 24px rgba(50,50,100,0.10);
+    max-width: 400px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+h2, h3 {
+    text-align: center;
+    margin-bottom: 14px;
+    color: #243175;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 7px;
+    border: 1.5px solid #e3e7f3;
+    font-size: 1em;
+    transition: border 0.2s;
+}
+
+input:focus, textarea:focus {
+    border: 1.5px solid #4f46e5;
+    outline: none;
+}
+
+button {
+    padding: 12px 0;
+    border-radius: 7px;
+    background: linear-gradient(90deg, #6366f1 60%, #2563eb 100%);
+    color: #fff;
+    font-size: 1.08em;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(50,70,180,0.07);
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2563eb 60%, #6366f1 100%);
+    filter: brightness(1.04);
+}
+
+#formInfo {
+    margin: 12px 0 0 0;
+    color: #047857;
+    font-weight: 500;
+    text-align: center;
+}
+
+.saved-data {
+    margin-top: 22px;
+    background: #f3f4fa;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+#sessionData {
+    font-size: 0.97em;
+    color: #334155;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
